@@ -1,0 +1,95 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 500px;
+
+    &__field {
+        flex: 1 1 100%;
+
+        padding: 25px;
+    }
+
+    &__legend {
+        font-size: 24px;
+
+        margin-bottom: 15px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 25px;
+    }
+
+    &__label {
+        flex: 0 1 15%;
+
+        margin-right: 20px;
+
+        svg {
+            max-width: 40px;
+            max-height: 25px;
+
+            fill: $deep-gray;
+        }
+    }
+
+    &__input {
+        font-size: 20px;
+
+        flex: 1 1 auto;
+
+        width: 100%;
+        padding: 8px 16px;
+
+        border-bottom: 1px solid $deep-gray;
+        background-color: transparent;
+
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__act {
+        font-size: 24px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 10px 20px;
+
+        transition: .3s;
+
+        color: $deep-gray;
+        border-radius: 10px;
+        background: $smoke-white;
+        box-shadow: 5px 5px 10px -5px $deep-gray,
+        -5px -5px 10px 5px $basic-white;
+
+        svg {
+            max-width: 20px;
+            max-height: 20px;
+            margin-right: 15px;
+
+            fill: $deep-gray;
+        }
+
+        &:hover {
+            color: $active-green;
+
+            svg {
+                fill: $active-green;
+            }
+        }
+    }
+}

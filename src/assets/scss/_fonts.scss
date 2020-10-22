@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('~@/assets/fonts/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('~@/assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/Gilroy-Regular.woff') format('woff'),
+    url('~@/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('~@/assets/fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('~@/assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/Gilroy-Bold.woff') format('woff'),
+    url('~@/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Codystar';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('~@/assets/fonts/Codystar-Regular.eot'); /* IE9 Compat Modes */
+    src: local('Codystar'),
+    url('~@/assets/fonts/Codystar-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('~@/assets/fonts/Codystar-Regular.woff') format('woff'), /* Modern Browsers */
+    url('~@/assets/fonts/Codystar-Regular.ttf') format('truetype'),; /* Safari, Android, iOS */
+}

@@ -1,32 +1,48 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+	<div class="wrapper">
+		<div class="app-field">
+			<Player />
+			<div class="app-data">
+				<div class="app-nav">
+					<router-link to="/radio">
+						<svg>
+							<use xlink:href="@/assets/icons/icons.svg#radio"></use>
+						</svg>
+					</router-link>
+					<router-link to="/likes">
+						<svg>
+							<use xlink:href="@/assets/icons/icons.svg#likes"></use>
+						</svg>
+					</router-link>
+					<router-link to="/singers">
+						<svg>
+							<use xlink:href="@/assets/icons/icons.svg#singers"></use>
+						</svg>
+					</router-link>
+					<router-link to="/albums">
+						<svg>
+							<use xlink:href="@/assets/icons/icons.svg#albums"></use>
+						</svg>
+					</router-link>
+				</div>
+				<div class="app-content">
+					<transition name="fade" mode="out-in">
+						<router-view/>
+					</transition>
+				</div>
+			</div>
+		</div>
+	</div>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import Player from '@/components/Player.vue'
+
+export default {
+	components: {
+		Player
+	}
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+</script>

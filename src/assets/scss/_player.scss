@@ -1,0 +1,181 @@
+.player-block {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+
+    min-width: 320px;
+    height: 100%;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 550px;
+
+    border-radius: 25px;
+    background-color: $smoke-white;
+    box-shadow: 15px 15px 30px 10px $deep-gray;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        width: 290px;
+        height: 540px;
+        padding: 20px;
+
+        border-right: 1px solid $light-blue;
+        border-bottom: 1px solid $light-blue;
+        border-radius: 25px;
+        box-shadow: -5px -5px 5px 0 $basic-white, 0 0 10px 0 $light-blue;
+    }
+
+    &__display {
+        flex-basis: 250px;
+
+        margin-bottom: auto;
+    }
+
+    &__control {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 100%;
+        margin: 0 -16.5px;
+        margin-bottom: 20px;
+
+        border-radius: 10px;
+        box-shadow: inset 1px 1px 5px 0 $light-blue, inset -4px -4px 8px -1px $basic-white;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 100%;
+        margin: 0 -16.5px;
+
+        border-radius: 10px;
+        box-shadow: inset 1px 1px 5px 0 $light-blue, inset -4px -4px 8px -1px $basic-white;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        flex-basis: 45px;
+        justify-content: center;
+
+        height: 45px;
+        margin: 8px 16.5px;
+
+        border-radius: 15px;
+        background-color: $smoke-white;
+        box-shadow: 2px 2px 6px -3px $deep-gray,
+        -2px -2px 6px -3px $basic-white,
+        inset 2px 2px 6px -3px $light-blue,
+        inset -2px -2px 6px -3px $basic-white;
+
+        &:hover {
+            .btn-icon {
+                fill: $active-green;
+            }
+        }
+    }
+}
+
+.display {
+    font-family: 'Codystar', 'Gilroy', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    border-right: 1px solid $basic-white;
+    border-bottom: 1px solid $basic-white;
+    border-radius: 50%;
+    box-shadow: -1px -1px 1px 0 $light-blue, 1px 1px 1px 0 $basic-white;
+
+    &__outer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 130px;
+        height: 130px;
+
+        border-radius: 50%;
+        box-shadow: 10px 10px 15px -15px $deep-gray, inset 10px 10px 20px -5px $light-blue;
+    }
+
+    &__inner {
+        overflow: hidden;
+
+        width: 120px;
+        height: 120px;
+
+        border-radius: 50%;
+        background-color: $mono-green;
+        box-shadow: 10px 10px 10px -10px $basic-white;
+    }
+
+    &__channel {
+        font-size: 24px;
+        line-height: 40px;
+
+        display: flex;
+        justify-content: center;
+
+        border-bottom: 2px solid rgba(103,116,131, .3);
+    }
+
+    &__frequency {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 40px;
+
+        border-bottom: 2px solid rgba(103,116,131, .3);
+    }
+
+    &__mode {
+        font-size: 16px;
+        line-height: 40px;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.btn-icon {
+    max-width: 20px;
+    max-height: 20px;
+
+    transition: all .25s;
+
+    fill: $light-gray;
+
+    &_active {
+        fill: $active-green;
+    }
+
+    &_noauth {
+        fill: red;
+    }
+}
+
+.display-icon {
+    max-width: 24px;
+    max-height: 40px;
+
+    fill: $deep-gray;
+}

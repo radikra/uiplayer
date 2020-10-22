@@ -1,0 +1,40 @@
+.app-nav {
+    display: flex;
+    flex: 0 0 60px;
+    flex-direction: column;
+
+    margin-left: 40px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 60px;
+
+        border: 1px solid $smoke-white;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px -5px $deep-gray,
+        inset -2px -2px 6px 2px $smoke-white,
+        -5px -5px 15px 5px $smoke-white,
+        inset 2px 2px 6px -2px $deep-gray;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        svg {
+            max-width: 30px;
+            max-height: 30px;
+
+            fill: $deep-gray;
+        }
+
+        &.router-link-exact-active {
+            svg {
+                fill: $active-green;
+            }
+        }
+    }
+}

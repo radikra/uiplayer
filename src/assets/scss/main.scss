@@ -1,0 +1,81 @@
+@import '_null';
+
+@import '_vars';
+
+@import '_fonts';
+
+@import '_player';
+
+@import '_nav';
+
+@import '_login';
+
+#app {
+    font-family: 'Gilroy', sans-serif;
+
+    overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
+
+    text-align: center;
+
+    color: #2c3e50;
+    background-color: $light-gray;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.app-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+.app-data {
+    display: flex;
+    align-items: center;
+    flex: 0 1 55%;
+    flex-direction: row-reverse;
+
+    height: 100%;
+}
+
+.app-content {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+
+    height: 90vh;
+    min-height: 550px;
+    padding: 25px;
+
+    border-radius: 25px;
+    background-color: rgba(255,255,255, .4);
+    background-image: url('~@/assets/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 10px -5px $deep-gray,
+    inset -5px -5px 10px 5px $basic-white,
+    -5px -5px 10px 5px $basic-white,
+    inset 5px 5px 10px -5px $deep-gray;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
